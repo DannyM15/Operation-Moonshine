@@ -4,7 +4,21 @@
   padding: 2rem;
   text-align: center;
 }
+.logo-container {
+  margin-bottom: 1rem;
+}
 
+.site-logo {
+  height: 180px;
+  width: 180px;
+  border-radius: 10%;
+  object-fit: cover;
+  -webkit-border-radius: 10%;
+  -moz-border-radius: 10%;
+  -ms-border-radius: 10%;
+  -o-border-radius: 10%;
+  
+}
 .logo {
   height: 6em;
   padding: 1.5em;
