@@ -30,7 +30,7 @@ const Header = () => {
           </ul>
         </ul>
         <ul><Link to='/store' className="" >Store</Link></ul>
-        <ul><Link to='/patreon' className="" >Patreon</Link></ul>
+        <ul><Link to='https://www.patreon.com/moonshineanimations' className="" >Patreon</Link></ul>
         <ul className="nav-item dropdown">
           <a className="nav-Link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Socials
