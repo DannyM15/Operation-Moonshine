@@ -7,30 +7,35 @@ import NG from '../assets/Images/Newgrounds_Icon.png'
 
 const Header = () => {
   return (
-    <header>
+    <header >
       <div className="logo-container position-absolute top-0 start-0">
         <Link to='/'> <img src={logo} alt="Moonshine Animations" className="site-logo" /></Link>
       </div>
       <nav className="navbar link-warning navbar-expand-lg navbar-primary position-absolute top-0 end-0 w-75 p-3 d-flex justify-content-around ">
         <ul className="nav-item dropdown">
-          <a className="nav-Link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             The World
           </a>
           <ul className="dropdown-menu">
-            <ul><Link to='/locations' className="dropdown-item" >Locations</Link></ul>
-            <ul><Link to='/factions' className="dropdown-item" >Factions</Link></ul>
-            {/* <ul><hr className="dropdown-divider"/></ul> */}
-            <div className="dropdown">
-              <ul>
-              <a className="dropdown-item dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Characters
-            </a>          
-              <nav className="nav nav-pills flex-column" aria-labelledby="navbarDropdown2">
-                <ul><Link to='/locations' className="dropdown-item" >Character 1</Link></ul>
-                <ul><Link to='/factions' className="dropdown-item" >Character 2</Link></ul>
-            </nav>
+            <li>
+              <Link to='/locations' className="dropdown-item">Locations</Link>
+            </li>
+            <li>
+              <Link to='/factions' className="dropdown-item">Factions</Link>
+            </li>
+            <li className="dropdown">
+              <a className="dropdown-item dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Characters
+              </a>
+              <ul className="dropdown-menu" aria-labelledby="navbarDropdown2">
+                <li>
+                  <Link to='/character1' className="dropdown-item">Character 1</Link>
+                </li>
+                <li>
+                  <Link to='/character2' className="dropdown-item">Character 2</Link>
+                </li>
               </ul>
-            </div>
+            </li>
           </ul>
         </ul>
         <ul className="nav-item dropdown">
