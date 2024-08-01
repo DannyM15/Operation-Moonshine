@@ -11,6 +11,14 @@ import Factions from './pages/Factions.jsx';
 import VAs from './pages/VAs.jsx';
 import Store from './pages/Store.jsx';
 import Vtubers from './pages/VTubers.jsx';
+import Alouette from './pages/Characters/Alouette.jsx'
+import Cecilia from './pages/Characters/Cecilia.jsx'
+import Hirudy from './pages/Characters/Hirudy.jsx'
+import Lumetri from './pages/Characters/Lumetri.jsx'
+import Merari from './pages/Characters/Merari.jsx'
+import Potato from './pages/Characters/Potato.jsx'
+import Pussylickingloli from './pages/Characters/Pussylickingloli.jsx'
+import Reznya from './pages/Characters/Reznya.jsx'
 
 
 const router = createBrowserRouter([
@@ -40,6 +48,30 @@ const router = createBrowserRouter([
    },{
     path: '/store',
     element: <Store />
+   },{
+    path: '/Alouette',
+    element: <Alouette />
+   },{
+    path: '/Cecilia',
+    element: <Cecilia />
+   },{
+    path: '/Hirudy',
+    element: <Hirudy />
+   },{
+    path: '/Lumetri',
+    element: <Lumetri />
+   },{
+    path: '/Merari',
+    element: <Merari />
+   },{
+    path: '/Potato',
+    element: <Potato />
+   },{
+    path: '/Pussylickingloli',
+    element: <Pussylickingloli />
+   },{
+    path: '/Reznya',
+    element: <Reznya />
    }
     ],
   },

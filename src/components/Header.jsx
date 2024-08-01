@@ -23,17 +23,36 @@ const Header = () => {
             <li>
               <Link to='/factions' className="dropdown-item">Factions</Link>
             </li>
-            <li className="dropdown">
+            <li >
               <a className="dropdown-item dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Characters
               </a>
               <ul className="dropdown-menu" aria-labelledby="navbarDropdown2">
                 <li>
-                  <Link to='/character1' className="dropdown-item">Character 1</Link>
+                  <Link to='/Alouette' className="dropdown-item"> Alouette </Link>
                 </li>
                 <li>
-                  <Link to='/character2' className="dropdown-item">Character 2</Link>
+                  <Link to='/Cecilia' className="dropdown-item"> Cecilia </Link>
                 </li>
+                <li>
+                  <Link to='/Hirudy' className="dropdown-item"> Hirudy </Link>
+                </li>
+                <li>
+                  <Link to='/Lumetri' className="dropdown-item"> Lumetri </Link>
+                </li>
+                <li>
+                  <Link to='/Merari' className="dropdown-item"> Merari </Link>
+                </li>
+                <li>
+                  <Link to='/Potato' className="dropdown-item"> Potato </Link>
+                </li>
+                <li>
+                  <Link to='/Pussylickingloli' className="dropdown-item"> Pussylickingloli </Link>
+                </li>
+                <li>
+                  <Link to='/Reznya' className="dropdown-item"> Reznya </Link>
+                </li>
+                
               </ul>
             </li>
           </ul>
