@@ -23,7 +23,7 @@ const Header = () => {
             <li>
               <Link to='/factions' className="dropdown-item">Factions</Link>
             </li>
-            <li >
+            <li className="dropdown">
               <a className="dropdown-item dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Characters
               </a>
