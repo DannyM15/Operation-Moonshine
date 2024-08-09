@@ -6,6 +6,17 @@ import NG from '../assets/Images/Newgrounds_Icon.png'
 
 
 const Header = () => {
+
+  const hideToggle = (e) => {
+    let toggle = e.target.parentElement.parentElement
+    toggle.classList.remove("show")
+  }
+
+  const hideToggleInner = (e) => {
+    let toggle = e.target.parentElement.parentElement.parentElement.parentElement
+    toggle.classList.remove("show")
+  }
+
   return (
     <header >
       <div className="logo-container position-absolute top-0 start-0">
@@ -13,15 +24,15 @@ const Header = () => {
       </div>
       <nav className="navbar link-warning navbar-expand-lg navbar-primary position-absolute top-0 end-0 w-75 p-3 d-flex justify-content-around ">
         <ul className="nav-item dropdown">
-          <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
             The World
           </a>
           <ul className="dropdown-menu">
             <li>
-              <Link to='/locations' className="dropdown-item">Locations</Link>
+              <Link to='/locations' onClick={hideToggle} className="dropdown-item">Locations</Link>
             </li>
             <li>
-              <Link to='/factions' className="dropdown-item">Factions</Link>
+              <Link to='/factions' onClick={hideToggle} className="dropdown-item">Factions</Link>
             </li>
             <li className="dropdown">
               <a className="dropdown-item dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -29,28 +40,28 @@ const Header = () => {
               </a>
               <ul className="dropdown-menu" aria-labelledby="navbarDropdown2">
                 <li>
-                  <Link to='/Alouette' className="dropdown-item"> Alouette </Link>
+                  <Link to='/Alouette' onClick={hideToggleInner} className="dropdown-item"> Alouette </Link>
                 </li>
                 <li>
-                  <Link to='/Cecilia' className="dropdown-item"> Cecilia </Link>
+                  <Link to='/Cecilia' onClick={hideToggleInner} className="dropdown-item"> Cecilia </Link>
                 </li>
                 <li>
-                  <Link to='/Hirudy' className="dropdown-item"> Hirudy </Link>
+                  <Link to='/Hirudy' onClick={hideToggleInner} className="dropdown-item"> Hirudy </Link>
                 </li>
                 <li>
-                  <Link to='/Lumetri' className="dropdown-item"> Lumetri </Link>
+                  <Link to='/Lumetri' onClick={hideToggleInner} className="dropdown-item"> Lumetri </Link>
                 </li>
                 <li>
-                  <Link to='/Merari' className="dropdown-item"> Merari </Link>
+                  <Link to='/Merari' onClick={hideToggleInner} className="dropdown-item"> Merari </Link>
                 </li>
                 <li>
-                  <Link to='/Potato' className="dropdown-item"> Potato </Link>
+                  <Link to='/Potato' onClick={hideToggleInner} className="dropdown-item"> Potato </Link>
                 </li>
                 <li>
-                  <Link to='/Pussylickingloli' className="dropdown-item"> Pussylickingloli </Link>
+                  <Link to='/Pussylickingloli' onClick={hideToggleInner} className="dropdown-item"> Pussylickingloli </Link>
                 </li>
                 <li>
-                  <Link to='/Reznya' className="dropdown-item"> Reznya </Link>
+                  <Link to='/Reznya' onClick={hideToggleInner} className="dropdown-item"> Reznya </Link>
                 </li>
                 
               </ul>
